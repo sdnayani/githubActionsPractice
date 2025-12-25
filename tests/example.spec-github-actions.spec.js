@@ -20,7 +20,7 @@ test('practice test2', async ({ page }) => {
   test('Practice Test3',async({ page })=>{
    await page.goto('https://saucedemo.com')
    console.log(await page.title())
-   expect(page).toHaveTitle('swag Labs2')
+   await expect(page).toHaveTitle('swag Labs2')
    console.log('Ending Practice Test3')
   })
 
